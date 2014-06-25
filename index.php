@@ -25,7 +25,7 @@ function excuse($excusefile)
 			Error
 		</title>
 		<meta info="bleh">
-		With a pocket full of shells
+		With a pocket full of strawberries
 	</head>
 
 	<body>
