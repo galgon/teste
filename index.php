@@ -1,0 +1,40 @@
+<?php
+/*
+   -------------------------------------------------------------------
+   quick script to grab a random BOFH excuse.
+
+    - Peter Lowe // pgl@yoyo.org // http://pgl.yoyo.org/bofh/
+
+   credit to Jeff Ballard <ballard@NOSPAMcs.wisc.edu> for the original
+   bofh excuse server: http://www.cs.wisc.edu/~ballard/bofh/
+   -------------------------------------------------------------------
+*/
+
+$excusefile = 'excuses';
+
+function excuse($excusefile)
+{
+	if (!$excuses = @file($excusefile))
+		return "couldn't read excuse file '$excusefile'";
+	return $excuses[mt_rand(0, count($excuses)-1)];
+}
+?>
+<html>
+	<head>
+		<title>
+			Error
+		</title>
+		<!-- google sitemaps -->
+		<meta name="verify-v1" content="mJSDTavS1FlrPuBMr4lID1XwnjdWHYRaaVzm88EUP8I=" />
+	</head>
+
+	<body>
+		<h1>Error 4<?=mt_rand(18,99)?></h1>
+		<p><?=excuse($excusefile)?></p>
+		<hr>
+		<address><?=apache_get_version()?> Server at <?=$_SERVER['SERVER_NAME']?> Port <?=$_SERVER['SERVER_PORT']?></address>
+	</body>
+</html>
+<?php
+// vim:noet:tabstop=4:shiftwidth=4:cinoptions=:cindent
+?>
