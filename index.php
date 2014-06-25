@@ -35,6 +35,9 @@ function excuse($excusefile)
 		<address><?=apache_get_version()?> Server at <?=$_SERVER['SERVER_NAME']?> Port <?=$_SERVER['SERVER_PORT']?></address>
 	</body>
 </html>
+
+<!-- fim de arquivo -->
+
 <?php
 // vim:noet:tabstop=4:shiftwidth=4:cinoptions=:cindent
 ?>
