@@ -24,8 +24,8 @@ function excuse($excusefile)
 		<title>
 			Error
 		</title>
-		<meta info="bleh">
-		With a pocket full of strawberries
+		<meta info="bleh"/>
+		<!-- With a pocket full of strawberries -->
 	</head>
 
 	<body>
