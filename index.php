@@ -24,8 +24,7 @@ function excuse($excusefile)
 		<title>
 			Error
 		</title>
-		<!-- google sitemaps -->
-		<meta name="verify-v1" content="mJSDTavS1FlrPuBMr4lID1XwnjdWHYRaaVzm88EUP8I=" />
+		<meta info="blah">
 	</head>
 
 	<body>
