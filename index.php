@@ -24,7 +24,8 @@ function excuse($excusefile)
 		<title>
 			Error
 		</title>
-		<meta info="blah">
+		<meta info="bleh">
+		With a pocket full of shells
 	</head>
 
 	<body>
